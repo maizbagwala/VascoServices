@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E3F99">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5E6AAC"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/menu_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_menu"
+                app:tint="@color/white" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nav_profile_image_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/profile_img" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nav_profile_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_profile_image_card"
+                android:layout_marginBottom="5dp"
+                android:text="Nirav Panchani"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nav_profile_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_profile_name_tv"
+                android:layout_marginBottom="5dp"
+                android:text="niravpanchani@gmail.com"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nav_profile_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nav_profile_email_tv"
+                android:layout_marginBottom="5dp"
+                android:text="+91 98765 43210"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:background="#2E3F99"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/nav_home"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Home" />
+
+            <TextView
+                android:id="@+id/nav_help_center"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Help Center" />
+
+            <TextView
+                android:id="@+id/nav_share_app"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Share App" />
+
+            <TextView
+                android:id="@+id/nav_about_us"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="About Us" />
+
+            <TextView
+                android:id="@+id/nav_privacy_policy"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Privacy Policy" />
+
+            <TextView
+                android:id="@+id/nav_term"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Terms &amp; Condition" />
+
+            <TextView
+                android:id="@+id/nav_contact_us"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Contact Us" />
+
+            <TextView
+                android:id="@+id/nav_logout"
+                style="@style/nav_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="side_nav_item_click"
+                android:text="Log Out" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

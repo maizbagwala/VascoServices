@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SubServiceFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_subservice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rb"
+        tools:listitem="@layout/sub_service_item" />
+
+    <LinearLayout
+        android:id="@+id/rb"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2E3F99"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Sub Total :- 399"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/process_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F1582D"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/process_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Process"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/process_tv"
+                android:src="@drawable/ic_forward" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

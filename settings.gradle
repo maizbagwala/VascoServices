@@ -1,0 +1,4 @@
+include ':horizontalcalendar1'
+include ':horizontalcalendar'
+include ':app'
+rootProject.name = "Vasco Services"

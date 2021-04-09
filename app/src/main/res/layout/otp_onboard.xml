@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/o_01" />
+
+    <TextView
+        android:id="@+id/enterotp_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Enter OTP"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/s_text"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterotp_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="OTP Will Send to Your Registration Number. +91 98765 43210"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/et_layout"
+        android:layout_marginTop="48dp"
+        android:paddingHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_text"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1" />
+
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1" />
+
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1" />
+
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1" />
+
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1" />
+
+        <EditText
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_layout"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_red_bg"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="Submit"
+        android:textAlignment="gravity"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/resebd_otp"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:text="Didn't get a code? Resend OTP"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".otpActivity">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/o_02" />
+
+    <TextView
+        android:id="@+id/enterotp_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Enter OTP"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/s_text"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterotp_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="OTP Will Send to Your Registration Number. +91 98765 43210"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/et_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_text"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/e_1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusRight="@id/e_2" />
+
+        <EditText
+            android:id="@+id/e_2"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusRight="@id/e_3" />
+
+        <EditText
+            android:id="@+id/e_3"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusRight="@id/e_4" />
+
+        <EditText
+            android:id="@+id/e_4"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusRight="@id/e_5" />
+
+        <EditText
+            android:id="@+id/e_5"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusRight="@id/e_6" />
+
+        <EditText
+            android:id="@+id/e_6"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_field_pin_1"
+            android:gravity="center"
+            android:maxLength="1" />
+    </LinearLayout>
+
+    <com.chaos.view.PinView
+        android:id="@+id/firstPinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/s_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="@drawable/ic_field_pin_1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@color/black"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemRadius="4dp"
+        app:itemSpacing="15dp"
+        app:lineColor="@color/white"
+        app:lineWidth="1dp"
+        app:viewType="rectangle" />
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstPinView"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_red_bg"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:text="Submit"
+        android:textAlignment="gravity"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/resebd_otp"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Didn't get a code? Resend OTP"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+</RelativeLayout>
